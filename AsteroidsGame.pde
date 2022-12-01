@@ -33,7 +33,5 @@ public void draw() {
       if(key == 'f') {
         bob.hyperspace();
       }
-  }
-  for(int i = 0; i < 20; i++){
-  }
-  }
+  }//keypressed
+  
