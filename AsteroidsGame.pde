@@ -25,7 +25,7 @@ public void draw()
   for(int i = 0; i < rocks.size(); i++) {
     rocks.get(i).move();
     rocks.get(i).show();
-    float d = dist((float)bob.getX(), (float)bob.getY(), (float)rocks.get(i).getAsteroidX(), (float)rocks.get(i).getAsteroidY());
+    float d = dist((float)bob.getSpaceshipX(), (float)bob.getSpaceshipY(), (float)rocks.get(i).getAsteroidX(), (float)rocks.get(i).getAsteroidY());
     if(d<10)
       rocks.remove(i);
   }
