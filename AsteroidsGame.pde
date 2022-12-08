@@ -26,7 +26,7 @@ public void draw()
   for (int i = 0; i < rocks.size(); i++) {
     rocks.get(i).move();
     rocks.get(i).show();
-    float d = dist((float)bob.getX(), (float)bob.getY(), (float)rocks.get(i).getX(), (float)rocks.get(i).getY());
+    float d = dist((float)bob.getX(), (float)bob.getY(), (float)rocks.get(i).getRockX(), (float)rocks.get(i).getRockY());
     if (d<10){
       rocks.remove(i);
       break;
@@ -35,7 +35,7 @@ public void draw()
     for (int j = 0; j < shots.size(); j++) {
       shots.get(j).move();
       shots.get(j).show();
-      float g = dist((float)shots.get(j).getX(), (float)shots.get(j).getY(), (float)rocks.get(i).getX(), (float)rocks.get(i).getY());
+      float g = dist((float)shots.get(j).getX(), (float)shots.get(j).getY(), (float)rocks.get(i).getRockX(), (float)rocks.get(i).getRockY());
       if (g<10) {
         shots.remove(j);
         rocks.remove(i);
@@ -64,4 +64,3 @@ public void draw()
     }
   }
 }
-
