@@ -14,10 +14,10 @@ class Bullet extends Floater{
   public void show() {
     ellipse((float)myCenterX,(float)myCenterY,5,5);
   }
-   public double getX() {
+   public double getBulletX() {
     return myCenterX;
   }
-  public double getY() {
+  public double getBulletY() {
     return myCenterY;
   }
 }
