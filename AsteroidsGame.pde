@@ -35,7 +35,7 @@ public void draw()
     for (int j = 0; j < shots.size(); j++) {
       shots.get(j).move();
       shots.get(j).show();
-      float g = dist((float)shots.get(j).getX(), (float)shots.get(j).getY(), (float)rocks.get(i).getRockX(), (float)rocks.get(i).getRockY());
+      float g = dist((float)shots.get(j).getBulletX(), (float)shots.get(j).getBulletY(), (float)rocks.get(i).getRockX(), (float)rocks.get(i).getRockY());
       if (g<10) {
         shots.remove(j);
         rocks.remove(i);
